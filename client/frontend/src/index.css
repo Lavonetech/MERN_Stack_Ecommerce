@@ -1,0 +1,513 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  max-width: 30rem;
+}
+h2 {
+  font-size: 20px;
+}
+.list {
+  margin: 1rem 0 0 10rem;
+}
+li {
+  list-style: none;
+}
+li a {
+  text-decoration: none;
+  color: #fff;
+  background-color: rgb(255, 119, 0);
+  padding: 0.7rem;
+  border-radius: 3px;
+}
+
+/*image carousel*/
+@media screen and (min-width:450px){
+  .image-carousel{
+    position: relative;
+    top:0.5rem;
+    height: 50vh;
+    display: flex;
+    height: 30vh;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+    
+  }
+  .carousel-image{
+    position: inherit;
+    display: flex;
+    width: 100%;
+    height:25vh;
+   justify-content: center;
+  }
+
+  .inner-image{
+    display: flex;
+    align-items: center;
+    max-width: 50rem;
+    box-shadow:0 4px 6px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10%;
+  }
+
+}
+
+
+
+
+
+
+
+/*Product*/
+
+.product {
+  display: flex;
+  margin-top: 5rem;
+}
+
+input {
+  position: relative;
+  display: column;
+  margin: 5px;
+  width: 100%;
+  padding: 8px;
+  border-radius: 3px;
+  border: none;
+  box-shadow: 1px;
+  background-color: aliceblue;
+}
+
+.button {
+  position: relative;
+  padding: 5px;
+  border: none;
+  margin: 3px 0 0 4px;
+}
+
+.disabled-link {
+  color: #999;
+  pointer-events: none;
+  cursor: not-allowed;
+  text-decoration: none;
+}
+
+input,
+textarea,
+select,
+button {
+  width: 100%;
+  font-family: "Muli-Regular";
+  color: #333;
+  font-size: 13px;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+  margin: 0;
+}
+
+img {
+  width: 80%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+ul {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+:focus {
+  outline: none;
+}
+
+.wrapper {
+  position: relative;
+  top: 5rem;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner {
+  max-width: 50rem;
+  margin: auto;
+  background: #fff;
+  padding: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.login-form {
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  display: block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 35px;
+  font-family: "Roboto";
+  text-align: center;
+  margin-bottom: 48px;
+  margin-top: -20px;
+  color: #6d5555;
+  letter-spacing: 3px;
+}
+
+.form-group {
+  display: flex;
+}
+.form-group .form-wrapper {
+  width: 50%;
+}
+.form-group .form-wrapper:first-child {
+  margin-right: 40px;
+}
+
+.form-wrapper {
+  margin-bottom: 27px;
+}
+.form-wrapper label {
+  margin-bottom: 10px;
+  display: block;
+  text-transform: uppercase;
+  font-family: "Muli-Bold";
+}
+
+.form-holder {
+  position: relative;
+}
+.form-holder i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 14px;
+  font-size: 17px;
+  color: #999;
+}
+
+.form-control {
+  border: 1px solid #e6e6e6;
+  display: block;
+  width: 100%;
+  height: 42px;
+  padding: 0 20px 0 46px;
+  color: #999;
+  font-size: 15px;
+}
+.form-control::-webkit-input-placeholder {
+  font-size: 17px;
+  transform: translateY(5px);
+  color: #999;
+}
+.form-control::-moz-placeholder {
+  font-size: 17px;
+  transform: translateY(5px);
+  color: #999;
+}
+.form-control:-ms-input-placeholder {
+  font-size: 17px;
+  transform: translateY(5px);
+  color: #999;
+}
+.form-control:-moz-placeholder {
+  font-size: 17px;
+  transform: translateY(5px);
+  color: #999;
+}
+
+.select::after {
+  content: "\f2f9";
+  font-family: Material-Design-Iconic-Font;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 12px;
+  font-size: 15px;
+  color: #999;
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  padding-left: 20px;
+}
+select option[value=""][disabled] {
+  display: none;
+}
+
+button {
+  border: none;
+  float: right;
+  width: 152px;
+  height: 42px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  font-size: 13px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Muli-SemiBold";
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+button::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+button:hover::before,
+button:active::before,
+button:focus::before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.button-holder {
+  position: relative;
+  display: flex;
+  align-self: flex-start;
+  top: 0;
+  left: 0;
+  width: 50%;
+}
+
+.checkbox {
+  position: relative;
+  width: 50%;
+  padding-left: 22px;
+}
+.checkbox label {
+  cursor: pointer;
+  color: #999;
+  font-family: "Muli-SemiBold";
+}
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkmark {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  height: 12px;
+  width: 13px;
+  border-radius: 2px;
+  background-color: #ebebeb;
+  border: 1px solid #ccc;
+  font-family: Material-Design-Iconic-Font;
+  color: #000;
+  font-size: 10px;
+  font-weight: bolder;
+}
+.checkmark:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  content: "\f26b";
+}
+
+@media (max-width: 767px) {
+  .wrapper {
+    display: block;
+  }
+
+  form {
+    padding: 0;
+    border: none;
+  }
+
+  .form-group {
+    display: block;
+  }
+  .form-group .form-wrapper {
+    width: 100%;
+  }
+  .form-group .form-wrapper:first-child {
+    margin-right: 0px;
+  }
+
+  .form-end {
+    display: block;
+  }
+
+  .checkbox,
+  .button-holder {
+    width: 100%;
+  }
+
+  .inner {
+    padding: 30px 15px;
+  }
+
+  button {
+    float: none;
+    margin-top: 30px;
+  }
+
+  h3 {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
+
+/* success, error message*/
+.message {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+.success-message {
+  position: relative;
+  top: 4.5rem;
+  left: 0;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  background: #09c15c;
+  color: #fff;
+  padding: 12px;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+/*product details*/
+#product {
+  position: relative;
+  top: 5rem;
+}
+
+.desc {
+  width: 80%;
+}
+.product-image {
+  /* Add styling for the image container */
+  text-align: center;
+}
+
+.product-image img {
+  max-width: 100%;
+  max-width: 20rem;
+}
+
+.product-details {
+  display: inline-block;
+  gap: 20px;
+  padding: 5px 3px 2px 2px;
+}
+
+.product-name {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.stock-a{
+  color:   #2ecc71;
+  font-weight:bold;
+  font-size:21px;
+}
+.stock-n{
+  color:   red;
+  font-weight:bold;
+  font-size:16px;
+}
+.product-price {
+  color:#f85606;
+  font-size: 1.2rem;
+  position: relative;
+  top: 0.5rem;
+}
+.desc{
+  font-size: 18px;
+  color: #5c5c5c;
+}
+.button {
+  position: relative;
+  top: 1rem;
+  left: 0;
+  display: flex;
+  gap: 1rem;
+}
+.stock{
+  display: flex;
+ position: inherit;
+ top:50px;
+ gap:20px;
+}
+.increment{
+  width: 20%;
+  display: flex;
+}
+/*Cart items*/
+
+.cart {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem;
+}
+
+.checkout-item {
+  margin-top: 5rem;
+}
+
+
+/*checkout form*/
+
+.product-det{
+  width:60%
+}
